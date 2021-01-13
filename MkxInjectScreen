@@ -1,0 +1,150 @@
+local MonkeiInjectionV1 = Instance.new("ScreenGui")
+local InjectionFrame = Instance.new("Frame")
+local I1 = Instance.new("ImageLabel")
+local I2 = Instance.new("ImageLabel")
+local T1 = Instance.new("TextLabel")
+local T2 = Instance.new("TextLabel")
+local T3 = Instance.new("TextButton")
+
+MonkeiInjectionV1.Name = "MonkeiInjectionV1"
+MonkeiInjectionV1.Parent = game.CoreGui
+MonkeiInjectionV1.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+MonkeiInjectionV1.ResetOnSpawn = false
+
+InjectionFrame.Name = "InjectionFrame"
+InjectionFrame.Parent = MonkeiInjectionV1
+InjectionFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+InjectionFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+InjectionFrame.BackgroundTransparency = 1.000
+InjectionFrame.BorderColor3 = Color3.fromRGB(30, 30, 30)
+InjectionFrame.BorderSizePixel = 0
+InjectionFrame.ClipsDescendants = true
+InjectionFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
+InjectionFrame.Selectable = true
+InjectionFrame.Size = UDim2.new(0, 248, 0, 153)
+
+I1.Name = "I1"
+I1.Parent = InjectionFrame
+I1.AnchorPoint = Vector2.new(0.5, 0.5)
+I1.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+I1.BackgroundTransparency = 1.000
+I1.BorderColor3 = Color3.fromRGB(34, 34, 34)
+I1.BorderSizePixel = 0
+I1.Position = UDim2.new(0.5, 0, 0.5, 0)
+I1.Image = "http://www.roblox.com/asset/?id=5651910485"
+
+I2.Name = "I2"
+I2.Parent = InjectionFrame
+I2.AnchorPoint = Vector2.new(0.5, 0.5)
+I2.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+I2.BackgroundTransparency = 1.000
+I2.BorderColor3 = Color3.fromRGB(34, 34, 34)
+I2.BorderSizePixel = 0
+I2.Position = UDim2.new(0.5, 0, 1.5, 0)
+I2.Size = UDim2.new(0, 115, 0, 115)
+I2.Image = "http://www.roblox.com/asset/?id=5651911343"
+
+T1.Name = "T1"
+T1.Parent = InjectionFrame
+T1.AnchorPoint = Vector2.new(0.5, 0.5)
+T1.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+T1.BackgroundTransparency = 1.000
+T1.BorderColor3 = Color3.fromRGB(30, 30, 30)
+T1.BorderSizePixel = 0
+T1.Position = UDim2.new(1.22000003, 0, 0.453999996, 0)
+T1.Size = UDim2.new(0, 107, 0, 26)
+T1.Font = Enum.Font.GothamBold
+T1.Text = "Monkei X"
+T1.TextColor3 = Color3.fromRGB(255, 255, 255)
+T1.TextScaled = true
+T1.TextSize = 14.000
+T1.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+T1.TextWrapped = true
+
+T2.Name = "T2"
+T2.Parent = InjectionFrame
+T2.AnchorPoint = Vector2.new(0.5, 0.5)
+T2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+T2.BackgroundTransparency = 1.000
+T2.BorderColor3 = Color3.fromRGB(30, 30, 30)
+T2.BorderSizePixel = 0
+T2.Position = UDim2.new(1.22000003, 0, 0.584999979, 0)
+T2.Size = UDim2.new(0, 107, 0, 14)
+T2.Font = Enum.Font.GothamBold
+T2.Text = "Has Injected"
+T2.TextColor3 = Color3.fromRGB(255, 255, 255)
+T2.TextScaled = true
+T2.TextSize = 14.000
+T2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+T2.TextWrapped = true
+
+T3.Name = "T3"
+T3.Parent = InjectionFrame
+T3.AnchorPoint = Vector2.new(0.5, 0.5)
+T3.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+T3.BackgroundTransparency = 1.000
+T3.BorderColor3 = Color3.fromRGB(30, 30, 30)
+T3.BorderSizePixel = 0
+T3.Position = UDim2.new(0.5, 0, 1.04999995, 0)
+T3.Size = UDim2.new(0, 107, 0, 10)
+T3.Font = Enum.Font.GothamBold
+T3.Text = "MonkeiX.github.io"
+T3.TextColor3 = Color3.fromRGB(255, 255, 255)
+T3.TextScaled = true
+T3.TextSize = 14.000
+T3.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+T3.TextWrapped = true
+
+local function JCCGM_fake_script()
+	local script = Instance.new('LocalScript', InjectionFrame)
+
+	script.Parent.I2:TweenPosition(UDim2.new(0.5,0,0.5,0), "Out", "Quad", 0.5, true)
+	script.Parent.I1:TweenSize(UDim2.new(0,115,0,115), "Out", "Quad", 0.5, true)
+	wait(1)
+	script.Parent.I1:TweenSize(UDim2.new(0,300,0,300), "Out", "Quad", 0.5, true)
+	script.Parent.T3:TweenPosition(UDim2.new(0.5,0,0.95,0), "Out", "Quad", 0.5, true)
+	wait(1)
+	script.Parent.I2:TweenPosition(UDim2.new(0.282,0,0.5,0), "Out", "Quad", 0.5, true)
+	script.Parent.T1:TweenPosition(UDim2.new(0.727, 0,0.454, 0), "Out", "Quad", 0.5, true)
+	script.Parent.T2:TweenPosition(UDim2.new(0.727, 0,0.585, 0), "Out", "Quad", 0.5, true)
+	wait(1.2)
+	script.Parent.I2:TweenPosition(UDim2.new(0.5,0,0.5,0), "Out", "Quad", 0.5, true)
+	script.Parent.T1:TweenPosition(UDim2.new(1.22,0,0.454,0), "Out", "Quad", 0.5, true)
+	script.Parent.T2:TweenPosition(UDim2.new(1.22,0,0.585,0), "Out", "Quad", 0.5, true)
+	wait(1)
+	script.Parent.T3:TweenPosition(UDim2.new(0.5,0,1.05,0), "Out", "Quad", 0.5, true)
+	script.Parent.I1:TweenSize(UDim2.new(0,115,0,115), "Out", "Quad", 0.5, true)
+	wait(1)
+	script.Parent.I2:TweenSize(UDim2.new(0,0,0,0), "Out", "Quad", 0.5, true)
+	script.Parent.I1:TweenSize(UDim2.new(0,0,0,0), "Out", "Quad", 0.5, true)
+end
+coroutine.wrap(JCCGM_fake_script)()
+local function VQDRQTC_fake_script()
+	local script = Instance.new('LocalScript', T3)
+
+	script.Parent.MouseButton1Click:connect(function()
+		setclipboard("monkeix.github.io")
+	end)
+end
+coroutine.wrap(VQDRQTC_fake_script)()
+print("-")
+print("--")
+print("---")
+print("----")
+print("-----")
+print("------")
+print("-------")
+print("--------")
+print("---------")
+print("----------")
+print("Monkei X Has Injected!")
+print("----------")
+print("---------")
+print("--------")
+print("-------")
+print("------")
+print("-----")
+print("----")
+print("---")
+print("--")
+print("-")
