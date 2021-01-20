@@ -1,6 +1,6 @@
-AAAAAAAAAAAAA
+updated_latest
 https://cdn.discordapp.com/attachments/783048309543010306/800942955073372190/femboy_milk.dll
-true
+false
 version
 dll
 https://cdn.discordapp.com/attachments/798325816446418954/800960233190457384/Loader.dll
