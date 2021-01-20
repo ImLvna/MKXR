@@ -1,9 +1,10 @@
 wait(1.2) 
-game.StarterGui:SetCore(\"SendNotification\", {
-Title = \"MKX"\";
-Text = \"Monkei X has been Injected!\";
-Duration = 5; 
-})"
+game.StarterGui:SetCore("SendNotification", {
+Title = "MKX"; -- Required. Has to be a string!
+Text = "Monkei X has been injected!"; -- Required. Has to be a string!
+Icon = ""; -- Optional, defaults to "" (no icon)
+Duration = 5; -- Optional, defaults to 5 seconds
+})
 print("-")
 print("--")
 print("---")
