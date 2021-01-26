@@ -1,9 +1,9 @@
-wait(1.2) 
-game.StarterGui:SetCore("SendNotification", {
-Title = "MKX"; -- Required. Has to be a string!
-Text = "Monkei X has been injected!"; -- Required. Has to be a string!
-Icon = ""; -- Optional, defaults to "" (no icon)
-Duration = 5; -- Optional, defaults to 5 seconds
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "MKX";
+ Text = "Monkei X Reborn Has Injected!";
+ Duration = 5;
+ Button1 = "Thanks!";
+ Callback = NotificationBindable;
 })
 print("-")
 print("--")
@@ -15,7 +15,7 @@ print("-------")
 print("--------")
 print("---------")
 print("----------")
-print("Monkei X Has Injected!")
+print("Monkei X Reborn Has Injected!")
 print("----------")
 print("---------")
 print("--------")
